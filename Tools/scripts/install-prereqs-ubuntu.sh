@@ -92,7 +92,7 @@ if [ -n "$RP" ]; then
 fi
 
 $APT_GET install $BASE_PKGS $SITL_PKGS $PX4_PKGS $ARM_LINUX_PKGS
-sudo pip2 -q install -U $PYTHON_PKGS
+sudo pip2 -q install -U $PYTHON_PKGS -i https://pypi.douban.com/simple/
 
 if [ ! -d $OPT/$ARM_ROOT ]; then
     (
